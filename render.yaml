@@ -1,0 +1,23 @@
+services:
+  # Web Service
+  - type: web
+    name: nova-voice-assistant
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements_new.txt
+    startCommand: python web_server.py
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: FLASK_ENV
+        value: production
+      - key: PORT
+        value: 10000
+    
+  # Background Service for Wake Word (if needed)
+  - type: pserv
+    name: nova-background
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements_new.txt
+    startCommand: python -c "print('Background service running')"

@@ -1,0 +1,37 @@
+# Core Dependencies
+google-generativeai>=0.8.0
+python-dotenv>=1.0.0
+
+# Speech Recognition (STT)
+SpeechRecognition>=3.10.0
+pyaudio>=0.2.14
+faster-whisper>=0.10.0  # Optional: Better accuracy
+
+# Text-to-Speech (TTS)
+pyttsx3>=2.90  # Cross-platform TTS
+pywin32>=306  # Required for pyttsx3 on Windows
+piper-tts>=1.2.0  # High-quality local TTS
+
+# System Control
+psutil>=5.9.0
+pyautogui>=0.9.54
+keyboard>=0.13.5
+pyperclip>=1.8.2
+
+# Database
+# sqlite3  # Built-in with Python
+
+# GUI Dependencies
+customtkinter>=5.2.0
+Pillow>=10.0.0
+
+# Web Framework
+flask>=3.0.0
+flask-socketio>=5.3.0
+flask-cors>=4.0.0
+python-socketio>=5.9.0
+eventlet>=0.33.0
+
+# Utilities
+requests>=2.31.0
+colorama>=0.4.6
